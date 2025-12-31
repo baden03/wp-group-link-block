@@ -1,0 +1,26 @@
+{
+	"name": "group-link",
+	"version": "1.0.0",
+	"description": "Combine blocks into a group wrapped with a hyperlink or div element.",
+	"author": "Twinpictures",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format:js": "wp-scripts format-js",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^15.0.0",
+		"@wordpress/blocks": "^15.0.0",
+		"@wordpress/components": "^30.0.0",
+		"@wordpress/i18n": "^6.0.0",
+		"@wordpress/element": "^6.0.0"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.20.0"
+	}
+}

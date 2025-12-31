@@ -1,0 +1,46 @@
+{
+	"apiVersion": 3,
+	"name": "twinpictures/group-link",
+	"title": "Group Link",
+	"category": "design",
+	"supports": {
+		"html": true,
+		"align": true,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"interactivity": {
+			"clientNavigation": true
+		}
+	},
+	"usesContext": [ "postId", "postType", "queryId" ],
+	"attributes": {
+		"url": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"linkTarget": {
+			"type": "string"
+		},
+		"ariaLabel": {
+			"type": "string"
+		},
+		"rel": {
+			"type": "string"
+		},
+		"queryLoopLink": {
+			"type": "boolean",
+			"default": false
+		},
+		"blockId": {
+			"type": "string"
+		}
+	},
+	"textdomain": "group-link",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/style-index.css",
+	"style": "file:./build/style-index.css"
+}

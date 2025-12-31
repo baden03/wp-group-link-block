@@ -1,0 +1,24 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-twinpictures-group-link {
+	display: block;
+
+	&.deactivated {
+		cursor: default;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
