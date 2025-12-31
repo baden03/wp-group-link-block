@@ -111,6 +111,11 @@ wp-group-link-block/
 - The block uses `get_block_wrapper_attributes()` for proper class merging
 - Supports WordPress block transforms for converting existing blocks
 
+## TODO
+
+- Rename the filter from `avf_column_link` to a more intuitive name (e.g., `group_link_block_url`)
+- Update the filter to pass all block attributes instead of just the block ID, making it more flexible for developers
+
 ## FAQ
 
 ### Can I use links within the Group Link Block?
@@ -121,9 +126,11 @@ No. Nested anchor elements are invalid HTML and cause rendering issues. The plug
 
 The block automatically wraps inner blocks in an anchor element (`<a>`) when a URL is provided or when Query Loop link is enabled. When no URL is provided, it wraps in a div element with a "deactivated" class.
 
-### What's different from WordPress's built-in Group block with links?
+### What's different from WordPress's built-in Group block?
 
-This block provides full control over link attributes (rel, title, aria-label, target) and automatically handles the HTML structure without relying on WordPress's built-in anchor support, which can cause duplicate anchor elements.
+While WordPress's built-in Group block allows you to add links to individual elements inside the group, those links only apply to those specific elements. This block links the entire group, making the whole block area clickable.
+
+Additionally, while you can wrap a Group block's start and end with a custom HTML element containing a link, this block offers programmatic control: the URL can be filtered and modified based on the block's ID attribute using the `avf_column_link` filter. This allows developers to change or remove links programmatically based on the block's context.
 
 ## License
 
